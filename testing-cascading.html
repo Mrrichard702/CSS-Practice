@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>External CSS</title>
+    <!--this is a link to the external stylesheet in this website. -->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!--
+      an internal stylesheet that affects all elements on this page.
+      the styling in the internal stylesheet will overwrite the styling
+      in the external stylesheet if the same property is styled in both places.
+    -->
+    <style>
+      /*this styles the font color for all body elements to be beige. */
+      body {
+        color: beige;
+      }
+
+      h1 {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <!--
+  this body tag has inline styling that changes the font color of all
+  body elements.
+  Since this is the same property that shows up in the internal stylesheet
+  and the external stylesheet, the value is used by the web page is the value 
+  given by that inline styling.
+  This mens that inline styling overwrites both internal and external styling
+-->
+  <body style="color: darkmagenta">
+    <nav>
+      <ul>
+        <li><a href="Index.html">homepage</a></li>
+        <li><a href="1st-Game.html">Numeber 1 Game</a></li>
+        <li><a href="2nd-Game.html">Numeber 2 Game</a></li>
+        <li><a href="3rd-Game.html">Number 3 Game</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>External CSS</h1>
+
+      <page>
+        This page shows the effects of adding external CSS to a webpage.
+      </page>
+
+      <p>does this paragraph have the same styling as my other paragraph?</p>
+    </main>
+  </body>
+</html>
